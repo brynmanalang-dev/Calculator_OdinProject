@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smallest Calculator</title>
+    <link rel="stylesheet" href="../css/calculator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+    
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div id="calculator">
+
+                <input id="display" readonly>
+
+        <div class="inputs">
+
+            <div class="numbers">
+
+                    <div class="row1">
+                        <button onclick="input('7')">7</button>
+                        <button onclick="input('8')">8</button>
+                        <button onclick="input('9')">9</button>
+                    
+                    </div>
+                    <div class="row2">
+                        <button onclick="input('4')">4</button>
+                        <button onclick="input('5')">5</button>
+                        <button onclick="input('6')">6</button>
+                        
+                    </div>
+                    <div class="row3">
+                        <button onclick="input('1')">1</button>
+                        <button onclick="input('2')">2</button>
+                        <button onclick="input('3')">3</button>
+                        
+                    </div>
+                    <div class="row4">
+                        <button onclick="clearDisplay()">C</button>
+                        <button class="zero" onclick="input(0)">0</button>
+                    </div>
+                
+            </div>
+
+                <div class="signs">
+    
+                    <button onclick="input('*')">x</button>
+                    <button onclick="input('-')">-</button>
+                    <button onclick="input('+')">+</button>
+                    <button onclick="calculate('=')">=</button>
+    
+                </div>
+                
+
+        </div>  
+        
+    </div>
+
+
+    <script src="../js/calculator.js"></script>
+</body>
+
+</html>
